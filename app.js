@@ -28,11 +28,14 @@ const config = {
             }
         ]
     },
-    //auth: {
-      //  play: true,
-        //publish: true,
-        //secret: 'CQCIAS&%2024?¡'
-    //}
+    auth: {
+        play: false,// TRUE: Indica que necesita la firma para poder repruducir el video en el panel admin
+        publish: true,
+        secret: 'CQCIAS&%2024?¡',
+        api : true,
+        api_user: 'admin',
+        api_pass: 'nms2018',
+    }
 };
 
 var nms = new NodeMediaServer(config)
